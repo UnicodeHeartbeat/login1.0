@@ -25,6 +25,12 @@ body {
     margin: auto;
 }
 
+@media (min-width: 768px) {
+    .container {
+        margin-top: -5px;
+    }
+}
+
 .welcomeText {
     text-align: center;
     position: relative;
