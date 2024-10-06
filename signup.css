@@ -28,11 +28,17 @@ body {
 .welcomeText {
     text-align: center;
     position: relative;
-    top: 30px; /* Adjust the position to match login page */
+    top: 30px;
 }
 
 .welcomeText h1 {
     font-size: 3rem;
+}
+
+.welcomeText {
+    text-align: center;
+    position: relative;
+    top: 30px; 
 }
 
 .signupBox {
