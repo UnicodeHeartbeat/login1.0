@@ -35,10 +35,10 @@ body {
     font-size: 3rem;
 }
 
-.welcomeText {
-    text-align: center;
-    position: relative;
-    top: 30px; 
+@media (min-width: 768px) {
+    .welcomeText h1 {
+        margin-top: 225px;
+    }
 }
 
 .signupBox {
