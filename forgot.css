@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.welcomeText {
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+.welcomeText h1 {
+    font-size: 3rem;
+}
+
+.forgotBox {
+    background-color: #181818;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+}
+
+.forgotBox::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    height: 160px;
+    width: 160px;
+    background-color: #d854c8;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.forgotBox h2 {
+    font-size: 1.8rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.forgotBox p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 15px;
+    background-color: #252525;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.signupButton {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to right, #d854c8, #6b142e);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signupButton:hover {
+    background: linear-gradient(to right, #6b142e, #d854c8);
+}
+
+.signupText {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signupText a {
+    color: #d854c8;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footerLinks a {
+    font-size: 0.8rem;
+    color: #AAA;
+    text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .welcomeText {
+        flex: 1;
+        max-width: 500px;
+        padding: 50px;
+        text-align: left;
+        margin-top: 100px;
+    }
+
+    .forgotBox {
+        flex: 1;
+    }
+
+    .welcomeText h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .forgotBox {
+        margin-top: 60px;
+    }
+
+    .welcomeText {
+        margin-top: 120px;
+    }
+}
